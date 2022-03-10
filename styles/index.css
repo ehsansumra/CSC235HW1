@@ -1,0 +1,269 @@
+:root {
+    --purple: #990a74;
+    --imgPurple: #cf27cb;
+    --navGray: #7d83a5;
+    --navBlue: #28336b;
+}
+* {
+  box-sizing: border-box
+}
+html, body {
+    margin: 0;
+    height: auto;
+}
+body {
+    /* border: 4px solid black; */
+    display: flex;
+    justify-content: center;
+}
+
+
+@font-face {
+    font-family: h1Header;
+    src: url(https://www.myfonts.com/fonts/garagefonts/freight-sans/medium-sc/);
+}
+
+p { 
+    line-height: 1.7;
+    font-size: 18px;
+    font-weight: 500;
+}
+.main {
+    width: 1223px;
+    height: 100%;
+    
+}
+
+.header {
+    display: flex;
+    justify-content: flex-start;
+    height: 192px;
+}
+
+.navBar {
+    display: flex;
+    justify-content: flex-start;
+    background-color: var(--navGray);
+    height: 44px;
+}
+.navBox {
+    font-family: 'Lucida Sans';
+    
+    color: #ffffff;
+    height: 100%;
+    width: 12.5%;
+    border-left: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navBar :nth-child(7) {
+    border-right: 3px solid black;
+}
+.navBar :nth-child(1) {
+    background-color: var(--navBlue);
+    color: #dadaa5;
+}
+
+.mainContent {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: 90%;
+}
+
+.leftContent {
+    height: 100%;
+    width: 41.7%;
+    background-color: #eab8c3;
+    background-image: linear-gradient(180deg, #c176b0 0%, #eab8c3 10%);
+}
+
+.leftHeader {
+    height: 145px;
+
+    margin-bottom: 7px;
+}
+
+.container1 {
+    margin-left: 25px;
+    margin-right:25px;
+}
+
+.leftHeaderText {
+    margin-top: 25px;
+}
+
+h1{
+    font-size: 20.5px;
+    letter-spacing: 4.5px;
+
+    font-family: "Lucida Sans";
+    font-weight: 500;
+}
+
+.submission {
+    padding-top: 18px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: dotted 3px #8a3a3f;
+    width: 100%;
+    height: 538px;
+}
+.submissionTitle {
+    font-family: 'Lucida Sans';
+    font-size: 17px;
+    text-decoration: overline;
+    font-weight: bold;
+}
+.submissionImg {
+    margin-top: 25px;
+    width: 350px;
+    height: 209px;
+    background-image: url("../img/blueMorpho.jpg");
+    background-size: cover;
+    border: 3.5px solid var(--imgPurple);
+    outline: 1px solid black;
+}
+
+.submissionImg.img2 {
+    background-image: url("../img/OWSwallowtail.jpg");
+    height: 250px;
+}
+.submission.sub2 {
+    margin-top: 20px;
+    height: 545px;
+}
+
+.user {
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.rightContent {
+    padding-left: 96px;
+    height: 100%;
+    width: 58.3%;
+    background-image: linear-gradient(180deg, #f0deb0 0%, #ffffff 10%);
+}
+
+.submissionImg.img3 {
+    background-image: url("../img/conserve.jpg");
+    width: 580px;
+    height: 385px;
+    border: 3.5px solid #b28c8b;
+}
+
+.caption {
+    margin-top:2px;
+}
+.logo {
+    height: 100%;
+    width: 260px;
+    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+    /* background-image:url("../img/BWlogo.jpg");
+    background-size: cover; */
+}
+
+.logoImg {
+    height: 80%;
+    width: 250px;
+    background-image:url("../img/BWlogo.jpg");
+    background-size: cover;
+}
+
+.headTextContainer {
+    width: 70%;
+    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.headText {
+    margin-left:1.8%;
+    font-size: 39px;
+    font-family: 'Lucida Sans';
+    color: var(--purple);
+    font-style: italic;
+    text-shadow:-3px 8px 7px #cbe1f9, 0px 9px 7px #bfd2f5;
+}
+.purpleBox {
+    width: 280px;
+    height:210px;
+    border-radius: 30px;
+    padding-top: 43px;
+    padding-left: 50px;
+    padding-right: 30px;
+    background-color: #ddddff;
+}
+
+.purpleBox p {
+    margin-top: 25px;
+}
+.purpleBox a {
+    color:#255a9f;
+    text-decoration: underline;
+}
+
+.wrapper {
+    width: 570px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.wrapper p {
+    margin-left: 8px
+}
+.footer {
+    background-image: url("../img/footer.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 185px;
+    border: 1px solid green;
+}
+
+.footerWrapper{
+    width: 400px;
+    margin: 30px;
+    font-size: 12px;
+}
+
+.footerWrapper > * {
+    font-size: 17px;
+}
+
+.footerText {
+    font-family: "Arial";
+    color: #c0c20e;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italicsLink {
+    color: #bcbbd2;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.blue {
+    color: #3b33d5;
+}
+
+.brown {
+    color: #7a594a;
+}
+
+.imgFrame {
+    height: auto;
+    padding: 0;
+    
+}
